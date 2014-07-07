@@ -31,24 +31,23 @@ this is the most resource-intensive part of the algorithm
 loads RAW PATSTAT and Amadeus, loads candidate matches,
 takes previous dataset and asks user to find the true matches
 
-3.  __remerge_sector_matrix.py__
+3.  __remerge_sector_matrix.py__ (can be run before 2.)
 calculates IPC-NAICS "similarity" by looking into the unique exact matches.
 A unique exact match is, of all pairings between a PATSTAT name and a company,
 the only one in which the two names are the same. 
 Most PATSTAT names have no exact match. Unique ones are even less.
 
-4.  __generate_vars.py__
-5.  __prepare_modelfit.py__
+4.  __generate_vars.py__ and __prepare_modelfit.py__
 Generate some of the variables that are used by the Lasso-regression.
 
-6.  __remerge_fitmodel_training.r__
+5.  __remerge_fitmodel_training.r__
 Fits the Lasso-regression model. (Calls some python code)
 Loads R source code from __regression_functions-modelmatrix.r__
 
-7.  __remerge_fitmodel_wholedata.py__
+6.  __remerge_fitmodel_wholedata.py__
 Fits the generated model to the whole dataset. Saves the results.
 
-8.  __remerge_persontable.py__
+7.  __remerge_persontable.py__ (optional)
 Takes the matching results and returns a table of
 _patstat_id_ : _phat_ : _company_id_ 
 where _patstat_id_ is the same as _person_id_ in patstat and _phat_ is the estimated probability of match.
