@@ -7,7 +7,6 @@ Assumes that unique exact matches are true matches.
 Takes the best matches lists, the cleaned PATSTAT and cleaned Amadeus files
 as inputs, and returns a tab-separated file with the sector similarity measures.
 
-Author: Michele Peruzzi
 """
 
 import pandas as pd

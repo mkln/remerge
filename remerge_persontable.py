@@ -57,7 +57,7 @@ def ungroupby(df, colname, sep):
 
 matchy = ungroupby(remerge, 'patstat_id', sep='**')
 
-matchy.to_csv('/home/desktop/patstat_data/all_code/remerge/remerge_sqllike_table/wrds_pymatch.csv', sep='\t', index = False)
+matchy.to_csv('/home/desktop/patstat_data/all_code/remerge/remerge_sqllike_table/remerge_patstatOct2011_AmadeusWRDS.csv', sep='\t', index = False)
 
 
 

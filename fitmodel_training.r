@@ -34,7 +34,7 @@ library(dplyr)
 library(ROCR)
 
 setwd('/home/desktop/patstat_data/all_code/remerge/regression_data/whole/')
-source("/home/desktop/patstat_data/all_code/remerge/R/regression_functions-modelmatrix.r")
+source("/home/desktop/patstat_data/all_code/remerge/regression_functions-modelmatrix.r")
 
 lab_withvars <- read.table('rPython_merged_data.csv', header=TRUE, sep='\t')
 #lab_withvars <- lab_withvars[complete.cases(lab_withvars$jw_name_dist),]

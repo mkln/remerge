@@ -1,14 +1,13 @@
 """
-Takes best matches, 
-      PATSTAT cleaned and geocoded, 
-      Amadeus cleaned and geocoded 
+Takes the .best matches (= candidates), 
+          .PATSTAT cleaned and geocoded, 
+          .Amadeus cleaned and geocoded 
 files for a country, manipulates information to create regressors that
 will be used when fitting the model to the training data.
 
 This creates the variables for the whole data as well, to be used during
 the final matching.
 """
-# output files are in regression_data/
 
 import sys
 sys.path.append("/home/desktop/patstat_data/all_code/dbUtils/")
@@ -49,7 +48,7 @@ sector_matrix_file = '/home/desktop/patstat_data/all_code/remerge/labeled_sample
 sector_matrix = pd.read_csv(sector_matrix_file, sep='\t')
 sector_matrix = sector_matrix.set_index('naics')
 
-eeeppat = pd.read_csv('/home/desktop/patstat_data/other_data/eee-ppat/EEE-PPAT_201204-wgjepriot38257h/EEE_PPAT_Apr2012.csv',
+eeeppat = pd.read_csv('/home/desktop/patstat_data/other_data/eee-ppat/EEE_PPAT_Oct2011.csv',
                     usecols = ['person_id', 'sector'])
 eeeppat = eeeppat.set_index('person_id')
 
