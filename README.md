@@ -1,6 +1,9 @@
 # REMERGE #
 ## Linking PATSTAT to Company databases ##
 
+Authors: Michele Peruzzi, Georg Zachmann, Reinhilde Veugelers
+please contact peruzzi@gmail.com for questions or help.
+
 ### Introduction ###
 PATSTAT is a database published by the European Patent Office and includes info on millions of patents and patentees.
 Its usage is sometimes limited by the little information on the patentees.
